@@ -1,0 +1,47 @@
+body{
+background: #aae3ea;
+margin: 0;
+padding: 0;
+}
+.btn{
+    width: 300px;
+    height: 60px;
+    background: #fcd68f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+.btn:before{
+    color: white;
+    font-family: sans-serif;
+    content: 'Butona Tıkla';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    transition: 1s;
+    
+}
+.btn:hover::before{
+top: -30px;
+}
+.btn::after{
+    font-family: Ionicons;
+    content: '\f141';
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 45px;
+    top: 140%;
+    transition: 1s;
+}
+.btn:hover::after{
+    top: 50%;
+}
